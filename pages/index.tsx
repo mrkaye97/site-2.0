@@ -4,11 +4,12 @@ import { faGithub, faStrava, faUntappd } from "@fortawesome/free-brands-svg-icon
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { imageRoot } from "@/src/common/images";
+import Resume from "./resume";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen text-seafoam-green">
-      <div className="w-full p-8 flex items-center justify-center">
+    <div className="flex flex-col min-h-screen text-seafoam-green">
+      <div className="w-full p-8 flex items-center justify-center min-h-screen">
         <div className="text-center space-y-4">
           <Image
             src={imageRoot + "headshot.jpg"}

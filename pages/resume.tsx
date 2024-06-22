@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <div className="w-full md:w-1/2 p-8 bg-dark-blue flex items-center justify-center">
+        <div className="p-8 flex items-center justify-center">
         <div className="grid grid-cols-1 gap-4 w-full">
           <div className="p-4 bg-darker-blue rounded-lg shadow-lg text-center">
             <h3 className="text-xl mb-2 text-light-seafoam">Job Title 1</h3>
