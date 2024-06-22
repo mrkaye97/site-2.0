@@ -28,6 +28,7 @@ export default function Home() {
           <a
             href="https://www.klaviyo.com"
             className="text-blue-300 hover:text-blue-500 transition-colors"
+            target="_blank"
           >
             Klaviyo
           </a>
@@ -37,6 +38,7 @@ export default function Home() {
           <a
             href="https://zensearch.jobs"
             className="text-blue-300 hover:text-blue-500 transition-colors"
+            target="_blank"
           >
             ZenSearch
           </a>
@@ -46,6 +48,7 @@ export default function Home() {
         <a
           href="https://github.com/mrkaye97"
           className="text-black hover:text-gray-300 transition-colors"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
           <span className="sr-only">Github</span>
@@ -53,6 +56,7 @@ export default function Home() {
         <a
           href="https://www.strava.com/athletes/16125633"
           className="text-black hover:text-gray-300 transition-colors"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faStrava} size="2x" />
           <span className="sr-only">Strava</span>
@@ -60,6 +64,7 @@ export default function Home() {
         <a
           href="mailto:mrkaye97@gmail.com"
           className="text-black hover:text-gray-300 transition-colors"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
           <span className="sr-only">Email</span>
@@ -67,6 +72,7 @@ export default function Home() {
         <a
           href="https://app.thestorygraph.com/profile/mrkaye97"
           className="text-black hover:text-gray-300 transition-colors"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faBook} size="2x" />
           <span className="sr-only">StoryGraph</span>
@@ -74,6 +80,7 @@ export default function Home() {
         <a
           href="https://untappd.com/user/mrkaye97"
           className="text-black hover:text-gray-300 transition-colors"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faUntappd} size="2x" />
           <span className="sr-only">Untappd</span>
