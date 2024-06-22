@@ -9,17 +9,17 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-red-300 to-stone-100 py-4 px-8 flex justify-between items-center">
+    <nav className="bg-dark-blue py-4 px-8 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
       <div className="flex space-x-8">
         <Link href="/">
-          <div className="text-gray-800 font-semibold hover:text-gray-600 text-lg py-2 px-4">
+          <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">
             Home
           </div>
         </Link>
         <div className="relative">
           <button
             onClick={() => toggleDropdown(0)}
-            className="text-gray-800 font-semibold hover:text-gray-600 text-lg py-2 px-4"
+            className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
           >
             Blog
           </button>
@@ -42,14 +42,14 @@ export default function Navbar() {
         </div>
         <a
           href="/code"
-          className="text-gray-800 font-semibold hover:text-gray-600 text-lg py-2 px-4"
+          className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
         >
           Code
         </a>
         <div className="relative">
           <button
             onClick={() => toggleDropdown(1)}
-            className="text-gray-800 font-semibold hover:text-gray-600 text-lg py-2 px-4"
+            className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
           >
             More
           </button>

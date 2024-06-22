@@ -10,8 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "brand-orange": "#ff7e5f",
-        "brand-pink": "#feb47b",
+        "dark-blue": "#001f3f",
+        "darker-blue": "#001f3f",
+        "seafoam-green": "#8ecae6",
+        "light-seafoam": "#b5e48c",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
