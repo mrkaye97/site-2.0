@@ -13,7 +13,7 @@ export default function Navbar() {
         <Dropdown
           buttonText="Blog"
           dropdownItems={[
-            { name: "Posts", link: "/posts" },
+            { name: "Posts", link: "/blog" },
             { name: "Series", link: "/series" },
           ]}
         />
