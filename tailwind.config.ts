@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "dark-blue": "#001f3f",
-        "darker-blue": "#001f3f",
+        "dark-blue": "#28515b",
+        "darker-blue": "#1c383f",
         "seafoam-green": "#8ecae6",
         "light-seafoam": "#b5e48c",
       },
