@@ -11,6 +11,7 @@ export type PostData = {
   date: string;
   categories: string;
   content: string;
+  introText: string;
 };
 
 export function getSortedPostsData() {
@@ -30,6 +31,7 @@ export function getSortedPostsData() {
       date: matterResult.data.date,
       categories: matterResult.data.categories,
       content: matterResult.content,
+      introText: matterResult.data.introText,
     };
 
     return data;
