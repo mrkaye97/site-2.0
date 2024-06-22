@@ -293,7 +293,7 @@ The basic premise was that we'd boot four instances of our Plumber API as backgr
 
 This worked well in theory (and also in practice, to an extent) until we ran into an odd problem: At certain levels of load, the "workers" started to die and not reboot, which resulted in cascading failures. Essentially, one worker would go down, resulting in more load on the other workers, until a second worker went down, causing the service to spiral and eventually crash. You can see this happening in the load test below.
 
-![](/nginx-plumber.png)
+![](/posts/nginx-plumber.png)
 
 At relatively low levels of traffic (~25 RPS) the service starts to have issues. Those issues snowball, until eventually every request begins failing. Note that 25 requests per second sounds like a lot, but that load is distributed across four workers, meaning each worker is attempting to handle 5-6 requests per second.
 
