@@ -21,7 +21,7 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
     >
       <button
         id="dropdownHoverButton"
-        className="text-seafoam-green bg-darker-blue hover:text-light-seafoam focus:ring-4 focus:outline-none focus:ring-light-seafoam font-semibold rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
+        className="text-seafoam-green bg-darker-blue hover:text-light-seafoam focus:ring-4 focus:outline-none focus:ring-0 font-semibold rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
         type="button"
       >
         {buttonText}
