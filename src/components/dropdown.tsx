@@ -21,7 +21,7 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
     >
       <button
         id="dropdownHoverButton"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="text-seafoam-green bg-darker-blue hover:text-light-seafoam focus:ring-4 focus:outline-none focus:ring-light-seafoam font-semibold rounded-lg text-lg px-4 py-2 text-center inline-flex items-center"
         type="button"
       >
         {buttonText}
@@ -44,17 +44,17 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
 
       <div
         id="dropdownHover"
-        className={`z-10 ${isOpen ? 'block' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}
+        className={`z-10 ${isOpen ? 'block' : 'hidden'} bg-darker-blue divide-y divide-gray-100 rounded-lg shadow w-44`}
       >
         <ul
-          className="py-2 text-sm text-gray-700 dark:text-gray-200"
+          className="py-2 text-lg text-seafoam-green"
           aria-labelledby="dropdownHoverButton"
         >
           {dropdownItems.map((item) => (
             <li key={item.link}>
               <a
                 href={item.link}
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-4 py-2 hover:bg-darkest-blue hover:text-light-seafoam"
               >
                 {item.name}
               </a>
