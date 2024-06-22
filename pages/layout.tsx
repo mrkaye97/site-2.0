@@ -6,15 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="max-h-dvh">
-      <header>
-        <Navbar />
-      </header>
-      <main
-        className={`flex flex-col items-center justify-center min-h-screen px-8 ${inter.className} bg-gradient-to-r from-red-300 to-stone-100`}
-      >
+    <div className={`flex flex-col min-h-screen ${inter.className}`}>
+      <Navbar />
+      <div className="flex flex-1 items-center justify-center px-8 bg-gradient-to-r from-red-300 to-stone-100">
         <main>{children}</main>
-      </main>{" "}
+      </div>
     </div>
   );
 }
