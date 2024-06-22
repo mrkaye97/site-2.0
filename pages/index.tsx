@@ -45,7 +45,7 @@ export default function Home() {
               ZenSearch
             </a>
           </p>
-          <div className="flex justify-center space-x-6 mt-6">
+          <div className="flex justify-center space-x-6 py-4">
             <a
               href="https://github.com/mrkaye97"
               className="text-seafoam-green hover:text-light-seafoam transition-colors"

@@ -15,6 +15,7 @@ const config: Config = {
         "darkest-blue": "#162c32",
         "seafoam-green": "#8ecae6",
         "light-seafoam": "#b5e48c",
+        "dark-seafoam": "#90b670",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

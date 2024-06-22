@@ -1,17 +1,5 @@
+import { TextLink } from "@/src/components/links";
 import React from "react";
-
-function TextLink({ text, href }: { text: string; href: string }) {
-  return (
-    <a
-      href={href}
-      className="text-light-seafoam hover:text-seafoam-green transition-colors"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {text}
-    </a>
-  );
-}
 
 export default function Code() {
   return (
