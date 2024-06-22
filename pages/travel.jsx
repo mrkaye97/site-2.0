@@ -7,20 +7,22 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default function TravelPhotos({ imageFilenames }) {
   return (
-    <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-      <Masonry>
-        {imageFilenames.map((el) => (
-          <div key={el} className="rounded-lg overflow-hidden p-2">
-            <Image
-              width={800}
-              height={600}
-              alt={"alt"}
-              src={imageRoot + `travel/${el}`}
-            />
-          </div>
-        ))}
-      </Masonry>
-    </ResponsiveMasonry>
+    <div className="m-2">
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+        <Masonry>
+          {imageFilenames.map((el) => (
+            <div key={el} className="p-1">
+              <Image
+                width={800}
+                height={600}
+                alt={"alt"}
+                src={imageRoot + `travel/${el}`}
+              />
+            </div>
+          ))}
+        </Masonry>
+      </ResponsiveMasonry>
+    </div>
   );
 }
 
