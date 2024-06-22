@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 type DropdownItem = {
   name: string;
@@ -28,7 +28,6 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 10 6"
         >
@@ -44,7 +43,7 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
 
       <div
         id="dropdownHover"
-        className={`absolute left-0 z-10 ${isOpen ? 'block' : 'hidden'} bg-darker-blue divide-y divide-gray-100 rounded-lg shadow w-44`}
+        className={`absolute left-0 z-10 ${isOpen ? "block" : "hidden"} bg-dark-blue divide-y divide-gray-100 rounded-lg shadow w-48`}
       >
         <ul
           className="py-2 text-lg text-seafoam-green"
@@ -54,7 +53,7 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
             <li key={item.link}>
               <a
                 href={item.link}
-                className="block px-4 py-2 hover:bg-darkest-blue hover:text-light-seafoam"
+                className="block px-4 py-2 hover:text-light-seafoam"
               >
                 {item.name}
               </a>

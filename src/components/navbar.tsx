@@ -18,12 +18,12 @@ export default function Navbar() {
           </div>
         </Link>
         <Dropdown
-            buttonText="Blog"
-            dropdownItems={[
-              { name: "Posts", link: "/posts" },
-              { name: "Series", link: "/series" },
-            ]}
-          />
+          buttonText="Blog"
+          dropdownItems={[
+            { name: "Posts", link: "/posts" },
+            { name: "Series", link: "/series" },
+          ]}
+        />
         <a
           href="/code"
           className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"

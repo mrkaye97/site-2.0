@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         "dark-blue": "#28515b",
         "darker-blue": "#1c383f",
+        "darkest-blue": "#162c32",
         "seafoam-green": "#8ecae6",
         "light-seafoam": "#b5e48c",
       },
