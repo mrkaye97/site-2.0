@@ -44,7 +44,7 @@ export default function Dropdown({ buttonText, dropdownItems }: DropdownProps) {
 
       <div
         id="dropdownHover"
-        className={`z-10 ${isOpen ? 'block' : 'hidden'} bg-darker-blue divide-y divide-gray-100 rounded-lg shadow w-44`}
+        className={`absolute left-0 z-10 ${isOpen ? 'block' : 'hidden'} bg-darker-blue divide-y divide-gray-100 rounded-lg shadow w-44`}
       >
         <ul
           className="py-2 text-lg text-seafoam-green"
