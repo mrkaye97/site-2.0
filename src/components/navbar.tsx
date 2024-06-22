@@ -1,17 +1,10 @@
 import Link from "next/link";
-import { useState } from "react";
 import Dropdown from "./dropdown";
 
 export default function Navbar() {
-  const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
-
-  const toggleDropdown = (index: number | null) => {
-    setDropdownOpen(dropdownOpen === index ? null : index);
-  };
-
   return (
-    <nav className="bg-darker-blue py-4 px-8 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
-      <div className="flex space-x-2">
+    <nav className="bg-darker-blue py-4 px-8 flex justify-between items-center fixed top-0 left-0 right-0 z-10 w-full">
+      <div className="flex space-x-2 max-w-screen-xl mx-auto">
         <Link href="/">
           <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">
             Home
@@ -24,12 +17,11 @@ export default function Navbar() {
             { name: "Series", link: "/series" },
           ]}
         />
-        <a
-          href="/code"
-          className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
-        >
-          Code
-        </a>
+        <Link href="/code">
+          <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">
+            Code
+          </div>
+        </Link>
         <Dropdown
           buttonText="More"
           dropdownItems={[
@@ -41,4 +33,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
