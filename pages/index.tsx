@@ -28,10 +28,10 @@ export default function Home() {
           className="rounded-full mx-auto"
         />
         <h1 className="text-3xl font-bold mt-4">
-          Hi! I'm <strong>Matt</strong>
+          Hi! I&apos;m <strong>Matt</strong>
         </h1>
         <p className="text-xl mt-2">
-          I'm an engineer at{" "}
+          I&apos;m an engineer at{" "}
           <a href="https://www.klaviyo.com" className="text-blue-600">
             Klaviyo
           </a>
