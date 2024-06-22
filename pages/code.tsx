@@ -15,8 +15,8 @@ export default function Code() {
         </h2>
         <p className="text-lg text-seafoam-green mb-4">
           <TextLink text="ZenSearch" href="https://zensearch.jobs" /> is a
-          NextJS / FastAPI app I&apos;ve been building to make your job hunt more
-          sane.{" "}
+          NextJS / FastAPI app I&apos;ve been building to make your job hunt
+          more sane.{" "}
           <TextLink
             text="You can read about it on my blog"
             href="https://matthewrkaye.com/posts/2023-11-10-jobcrawler/jobcrawler.html"
