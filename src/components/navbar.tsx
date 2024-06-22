@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Dropdown from "./dropdown";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
@@ -16,66 +17,27 @@ export default function Navbar() {
             Home
           </div>
         </Link>
-        <div className="relative">
-          <button
-            onClick={() => toggleDropdown(0)}
-            className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
-          >
-            Blog
-          </button>
-          {dropdownOpen === 0 && (
-            <div className="absolute bg-white shadow-lg rounded mt-2 py-2 w-48">
-              <a
-                href="/posts"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Posts
-              </a>
-              <a
-                href="/series"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Series
-              </a>
-            </div>
-          )}
-        </div>
+        <Dropdown
+            buttonText="Blog"
+            dropdownItems={[
+              { name: "Posts", link: "/posts" },
+              { name: "Series", link: "/series" },
+            ]}
+          />
         <a
           href="/code"
           className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
         >
           Code
         </a>
-        <div className="relative">
-          <button
-            onClick={() => toggleDropdown(1)}
-            className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4"
-          >
-            More
-          </button>
-          {dropdownOpen === 1 && (
-            <div className="absolute bg-white shadow-lg rounded mt-2 py-2 w-48">
-              <a
-                href="/my-three-favorite"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                My three favorite
-              </a>
-              <a
-                href="/travel"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Going places
-              </a>
-              <a
-                href="/blogroll"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Blogroll
-              </a>
-            </div>
-          )}
-        </div>
+        <Dropdown
+          buttonText="More"
+          dropdownItems={[
+            { name: "My three favorite", link: "/my-three-favorite" },
+            { name: "Going places", link: "/travel" },
+            { name: "Blogroll", link: "/blogroll" },
+          ]}
+        />
       </div>
     </nav>
   );

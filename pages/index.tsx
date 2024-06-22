@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faStrava, faUntappd } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faStrava,
+  faUntappd,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { imageRoot } from "@/src/common/images";
@@ -32,7 +36,8 @@ export default function Home() {
             </a>
           </p>
           <p className="text-seafoam-green text-2xl mt-2">
-            In my free time, I like to ski, read fantasy books, cook, and work on{" "}
+            In my free time, I like to ski, read fantasy books, cook, and work
+            on{" "}
             <a
               href="https://zensearch.jobs"
               className="text-light-seafoam hover:text-seafoam-green transition-colors"
