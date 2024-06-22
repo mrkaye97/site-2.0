@@ -10,13 +10,11 @@ export default function Navbar() {
             Home
           </div>
         </Link>
-        <Dropdown
-          buttonText="Blog"
-          dropdownItems={[
-            { name: "Posts", link: "/blog" },
-            { name: "Series", link: "/series" },
-          ]}
-        />
+        <Link href="/blog">
+          <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">
+            Blog
+          </div>
+        </Link>
         <Dropdown
           buttonText="About Me"
           dropdownItems={[
