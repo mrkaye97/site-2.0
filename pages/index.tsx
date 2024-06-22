@@ -12,7 +12,7 @@ import Resume from "./resume";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen text-seafoam-green">
+    <div className="flex flex-col items-center justify-center min-h-screen text-seafoam-green">
       <div className="w-full p-8 flex items-center justify-center min-h-screen">
         <div className="text-center space-y-4">
           <Image
