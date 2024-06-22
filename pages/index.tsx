@@ -12,13 +12,13 @@ import { imageRoot } from "@/src/common/images";
 export default function Home() {
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center space-y-4">
         <Image
           src={imageRoot + "headshot.jpg"}
           alt="Headshot"
-          width={150}
-          height={150}
-          className="rounded-full mx-auto shadow-lg" // Removed border, kept shadow
+          width={200}
+          height={200}
+          className="rounded-full mx-auto shadow-lg my-8"
         />
         <h1 className="text-slate-800 text-4xl mt-4">
           Hi! I&apos;m <strong>Matt</strong>
