@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { imageRoot } from "@/src/common/images";
 
-export default function GalleryPage({
+export default function TravelPhotos({
   imageFilenames,
 }: {
   imageFilenames: string[];
@@ -12,13 +12,14 @@ export default function GalleryPage({
   return (
     <div className="flex flex-col justify-center items-center space-y-4 mb-16">
       {imageFilenames.map((el: string) => (
-        <Image
-          width={800}
-          height={600}
-          alt={"alt"}
-          src={imageRoot + `travel/${el}`}
-          key={el}
-        />
+        <div key={el} className="rounded-lg overflow-hidden">
+          <Image
+            width={800}
+            height={600}
+            alt={"alt"}
+            src={imageRoot + `travel/${el}`}
+          />
+        </div>
       ))}
     </div>
   );
