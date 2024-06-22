@@ -320,11 +320,11 @@ const favorites: FavoriteCategoryProps[] = [
 export default function MyThreeFavorite() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold text-light-seafoam mb-4">
+      <div>
+        <h2 className="text-3xl font-bold text-light-seafoam mb-8">
           My Three Favorite, Alphabetically
         </h2>
-        <ul className="list-disc pl-6">
+        <ul className="">
           {favorites.map((category) => {
             return (
               <FavoriteCategory
