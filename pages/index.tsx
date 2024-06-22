@@ -19,7 +19,7 @@ export default function Home() {
       className={`flex flex-col items-center justify-center min-h-screen py-24 px-8 ${inter.className}`}
       style={{
         margin: "0 auto",
-        background: "linear-gradient(to right, #FF7F50, #fff)",
+        background: "linear-gradient(to right, #a1c4fd, #c2e9fb)",
         color: "#fff",
       }}
     >
@@ -29,13 +29,13 @@ export default function Home() {
           alt="Headshot"
           width={150}
           height={150}
-          className="rounded-full mx-auto border-4 border-white shadow-lg"
+          className="rounded-full mx-auto shadow-lg" // Removed border, kept shadow
         />
         <h1 className="text-4xl font-bold mt-4">
-          Hi! I'm <strong>Matt</strong>
+          Hi! I&apos;m <strong>Matt</strong>
         </h1>
         <p className="text-2xl mt-2">
-          I'm an engineer at{" "}
+          I&apos;m an engineer at{" "}
           <a
             href="https://www.klaviyo.com"
             className="text-blue-300 hover:text-blue-500 transition-colors"
