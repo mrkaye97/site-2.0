@@ -17,17 +17,12 @@ export default function Navbar() {
             { name: "Series", link: "/series" },
           ]}
         />
-        <Link href="/code">
-          <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">
-            Code
-          </div>
-        </Link>
         <Dropdown
-          buttonText="More"
+          buttonText="About Me"
           dropdownItems={[
             { name: "My three favorite", link: "/my-three-favorite" },
             { name: "Going places", link: "/travel" },
-            { name: "Blogroll", link: "/blogroll" },
+            { name: "Code", link: "/code" },
           ]}
         />
       </div>
