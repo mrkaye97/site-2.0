@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-dark-blue py-4 px-8 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
+    <nav className="bg-darker-blue py-4 px-8 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
       <div className="flex space-x-8">
         <Link href="/">
           <div className="text-seafoam-green font-semibold hover:text-light-seafoam text-lg py-2 px-4">

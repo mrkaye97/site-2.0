@@ -7,8 +7,8 @@ import { imageRoot } from "@/src/common/images";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-dark-blue text-seafoam-green">
-      <div className="w-full p-8 bg-dark-blue flex items-center justify-center">
+    <div className="flex flex-col md:flex-row min-h-screen text-seafoam-green">
+      <div className="w-full p-8 flex items-center justify-center">
         <div className="text-center space-y-4">
           <Image
             src={imageRoot + "headshot.jpg"}
